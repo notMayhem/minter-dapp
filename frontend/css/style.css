@@ -151,20 +151,21 @@ header .container {
 /* CARD */
 
 .card {
-  position: right;
+  position: relative;
   border-radius: 5px;
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
   transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
+  position: fixed;
+  
 
 }
 
 .show-card {
   opacity: 1;
   transform: translateX(0);
-  align-items: right;
 }
 
 /* COUNTDOWN SECTION */
@@ -184,7 +185,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: right;
 }
 
 .countdown ul {
