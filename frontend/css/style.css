@@ -164,6 +164,7 @@ header .container {
 .show-card {
   opacity: 1;
   transform: translateX(0);
+  align-items: right;
 }
 
 /* COUNTDOWN SECTION */
