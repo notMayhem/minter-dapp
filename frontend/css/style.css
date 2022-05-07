@@ -58,13 +58,16 @@ body {
 header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
-  font-size: 25pt;
+  font-size: 35pt;
+  text-shadow: 1px 1px 0 var(--accent-color);
+  font-style: italic;
 }
 
 header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .menu {
