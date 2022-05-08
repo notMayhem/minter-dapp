@@ -330,13 +330,6 @@ section {
   margin: 1rem 0;
 }
 
-/* LOGO */
-.Logo {
- position: Left;
- transform: translate(-47%, -41.5%) scale(.35);
-}
-
-
 /* SPINNER */
 .dot-spin {
   position: absolute;
