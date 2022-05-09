@@ -176,6 +176,7 @@ header .container {
 section {
   flex: 1 1 auto;
   position: right;
+  visibility: hidden;
 }
 
 #countdown {
