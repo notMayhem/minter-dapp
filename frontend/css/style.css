@@ -6,7 +6,6 @@
 
 html {
   scrollbar-width: none;
-  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -51,7 +50,6 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
-  overflow: hidden;
 }
 
 /* HEADER */
@@ -211,8 +209,8 @@ section {
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
-  visibility: hidden;
 }
+
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
