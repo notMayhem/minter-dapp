@@ -176,7 +176,6 @@ header .container {
 section {
   flex: 1 1 auto;
   position: right;
-  visibility: hidden;
 }
 
 #countdown {
@@ -212,6 +211,7 @@ section {
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
+  visibility: hidden;
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
