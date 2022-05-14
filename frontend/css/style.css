@@ -6,7 +6,6 @@
 
 html {
   scrollbar-width: none;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
