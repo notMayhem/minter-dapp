@@ -394,7 +394,7 @@ section {
 }
 
 /* Logo */
-.Logo {
-  transform: translateX(-1750px) translateY(-2700px);
+.Logo{
+  transform: translateX(-1750px) translateY(-2600px);
   scale: 37%;
 }
