@@ -6,6 +6,7 @@
 
 html {
   scrollbar-width: none;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -72,12 +73,6 @@ header .container {
   display: flex;
   gap: 2rem;
   align-items: center;
-}
-
-/* Logo */
-.Logo {
-  transform: translateX(-1750px) translateY(-3700px);
-  scale: 37%;
 }
 
 /* NOT CONNECTED */
@@ -396,4 +391,10 @@ section {
 
 .hidden {
   display: none;
+}
+
+/* Logo */
+.Logo {
+  transform: translateX(-1750px) translateY(-3700px);
+  scale: 37%;
 }
