@@ -88,6 +88,7 @@ header .container {
 
 .show-not-connected {
   opacity: 1;
+  transform: translateY(-2500px);
 }
 
 .not-connected h1 {
