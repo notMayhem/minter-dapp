@@ -315,6 +315,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+  transform: translateX(-750px)translateY(-2625px);
 }
 
 .minted-container h1 {
