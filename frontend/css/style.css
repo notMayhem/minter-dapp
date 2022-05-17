@@ -252,7 +252,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-750px)translateY(-2625px);
+  transform: translatex(-100px)translatey(-600px);
 }
 
 .info-container {
