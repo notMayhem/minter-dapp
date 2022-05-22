@@ -2,29 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* SCROLLBAR */
-
-html {
-  scrollbar-width: none;
-  overflow: hidden;
-}
-
-::-webkit-scrollbar {
-  display: none;
-  width: 0px;
-}
-
 /* GLOBAL STYLES */
 
 :root {
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Arvo", serif;
   --font-code: "Roboto", monospace;
-  --bg-color: #f59df6;
-  --bg-color-transparent: #f59df681;
+  --bg-color: #e779e4;
+  --bg-color-transparent: #e47ae6;
   --font-color: #ffffff;
-  --btn-bg-color: #000000;
-  --accent-color: #82f9f5;
+  --btn-bg-color: #ffffff;
+  --accent-color: #be7efe;
   --header-shadow: var(--accent-color) 0px 0px 5px;
   --card-shadow: var(--accent-color) 0px 0px 20px;
 }
@@ -51,6 +39,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* HEADER */
@@ -58,9 +47,6 @@ body {
 header {
   background-color: var(--bg-color);
   box-shadow: var(--header-shadow);
-  font-size: 25pt;
-  text-shadow: 1px 1px 0 var(--accent-color);
-  font-style: italic;
 }
 
 header .container {
@@ -78,17 +64,17 @@ header .container {
 /* NOT CONNECTED */
 .not-connected {
   align-items: center;
+  height: 100%;
   text-align: center;
   margin: 0 auto 0 35vw;
   opacity: 0;
   transform: translateY(10vh);
   transition: all 0.5s ease-in-out;
-  
 }
 
 .show-not-connected {
   opacity: 1;
-  transform: translateY(-2500px);
+  transform: translateY(0);
 }
 
 .not-connected h1 {
@@ -154,15 +140,15 @@ header .container {
 
 .card {
   position: relative;
+  background-color: var(--bg-color);
   border-radius: 5px;
+  border: 3px solid var(--accent-color);
+  box-shadow: var(--card-shadow);
   padding: 5rem;
   margin-bottom: 2rem;
   opacity: 0;
   transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
-  position: fixed;
-  
-
 }
 
 .show-card {
@@ -174,7 +160,6 @@ header .container {
 
 section {
   flex: 1 1 auto;
-  position: right;
 }
 
 #countdown {
@@ -187,7 +172,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-2250px);
 }
 
 .countdown ul {
@@ -212,7 +196,6 @@ section {
   line-height: 1;
   border-radius: 4px 4px 0 0;
 }
-
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
   font-family: var(--font-secondary);
@@ -252,7 +235,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translatex(-100px)translatey(-600px);
 }
 
 .info-container {
@@ -316,7 +298,6 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  transform: translateX(-750px)translateY(-2625px);
 }
 
 .minted-container h1 {
@@ -331,6 +312,24 @@ section {
 
 .minted-container p {
   margin: 1rem 0;
+}
+
+/* SLIDDER */
+
+.splide {
+  position: absolute;
+  top: 90px;
+  left: 5rem;
+  z-index: -1;
+}
+
+.splide__slide {
+  border: var(--accent-color) solid;
+  border-width: 5px 10px;
+}
+
+.splide__slide img {
+  width: 100%;
 }
 
 /* SPINNER */
@@ -394,10 +393,4 @@ section {
 
 .hidden {
   display: none;
-}
-
-/* Logo */
-.Logo{
-  transform: translateX(-1750px) translateY(-2600px);
-  scale: 37%;
 }
